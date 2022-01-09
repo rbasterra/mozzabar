@@ -1,0 +1,45 @@
+.header{
+    height: 25%;
+    width: 100%;
+    background-color:$header-background-color;
+    color: $text-color;
+    @include flexContainer (row, space-around, center, wrap);
+
+    // background-image: url('../img/Gallery/mozza.jpeg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-blend-mode: color;
+    
+    font-family: $font-family;
+
+    &__logo{
+        @include flexContainer (column, center, center, wrap);
+    }
+
+    &__text{
+        @include flexContainer (row,flex-start,center,nowrap);
+        font-style: italic;
+        // font-family: font-mFajardose;
+        // font-size: 1.5rem;
+        padding: 0.5rem 0;
+        color:$text-color;
+        
+        &::before{
+            content:'';
+            height: 2px;
+            width:6rem;
+            background-color:$mozzaSecondary-color;
+            flex-grow: 1;
+            margin-right: 1rem;
+        }
+
+        &::after{
+            content:'';
+            height: 2px;
+            width:6rem;
+            background-color: $mozzaSecondary-color;
+            flex-grow: 1;
+            margin-left:1rem;
+        }
+    }
+}

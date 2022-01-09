@@ -1,0 +1,49 @@
+.container-text {
+    // display: inline-block;
+    @include flexContainer(column,center,center,nowrap);
+    width: 20%;
+    height: auto;
+    // background-color: $header-background-color;
+    background-color: rgb(20, 20, 20);
+    padding: 2rem 5rem;
+
+    text-align: justify;
+    text-justify: inter-word;
+    color:$text-color;
+
+  
+
+    &__concepto{
+        width:100%;
+
+        @include flexContainer (row, flex-start, center, nowrap);
+
+        &::before{
+            @include lineDivider(white,margin-right);
+        }
+
+        &::after{
+            @include lineDivider (white,margin-left);
+        }
+
+        // &::before, &::after{
+        //     content:'';
+        //     height: 1px;
+        //     width:100%;
+        //     background-color: $mozzaSecondary-color;
+        //     flex-grow: 1;
+        //     margin-left:1rem;
+            
+        // }
+
+        // &::before{
+        //     margin-right:1rem;
+        // }
+
+        // &::after
+
+    }
+
+   
+
+}

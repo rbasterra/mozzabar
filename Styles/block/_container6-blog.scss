@@ -1,0 +1,21 @@
+.blog{
+
+    @include flexContainer (column, center, center, wrap);
+
+    &__separator{
+        width:50%;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        text-transform: uppercase;
+
+        @include flexContainer (row,flex-start,center,nowrap);
+
+        &::before{
+            @include lineDivider ($mozzaSecondary-color, margin-right);
+        }
+
+        &::after{
+            @include lineDivider ($mozzaSecondary-color, margin-left);
+        }
+    }
+}

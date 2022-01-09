@@ -1,0 +1,56 @@
+.carta-main{
+    
+    width:80%;
+    // height:80rem;
+    
+
+    background-image: url(../img/container4_tropicalLeaves.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    @include flexContainer(row, space-around, flex-start, nowrap);
+
+    &__section{
+        width: 40%;
+        // height: 60%;
+        margin:5% 0;
+        background-color: $list-background;
+
+    }
+
+    h3{
+        // margin-left: 5%;
+        // margin-bottom: 0;
+        margin: 5% 0 0 5%;
+        text-transform: uppercase;
+    }
+
+    &__list{
+        list-style-type: none;
+        text-transform: uppercase;
+        padding:5%; 
+        margin:0;
+        font-size:13px;
+
+        &-item{
+            padding-top: 1rem;
+            @include flexContainer(row,space-between,flex-start,nowrap);
+
+        }
+    }
+
+}
+
+.carta-list{
+
+    &__title{
+        padding-top:0;
+        @include flexContainer(row,space-between,flex-start,nowrap);
+    }
+    // &__item{
+        
+    //     // width:80%
+    // }
+
+}
+

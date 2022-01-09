@@ -1,0 +1,40 @@
+@import './utilities/variables';
+@import './utilities/mixins';
+
+// @import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
+
+@font-face {
+    font-family: font-mFajardose;
+    src: url('./Fonts/MissFajardose-Regular.ttf');
+}
+
+
+
+@import './block/header';
+@import './block/img-logo';
+@import './block/navbar';
+@import './block/container1';
+@import './block/container-descubre';
+@import './block/container2';
+@import './block/container-text';
+
+@import './block/container3';
+@import './block/container3-gallery';
+
+@import './block/container4';
+@import './block/container4-cartaTitle';
+@import './block/container4-cartaMain';
+
+@import './block/container5';
+@import './block/container5-reservas';
+
+@import './block/container6-blog';
+
+@import './block/container7';
+@import './block/bottom-logo';
+
+@import './block/container8';
+
+@import './block/footer';
+
+

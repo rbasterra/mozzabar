@@ -1,0 +1,29 @@
+.container2{
+    width:100%;
+    // height:50rem;
+    padding:10% 0;
+
+    background-image: url('../img/tropicalLeaves.jpeg');
+
+    @include flexContainer (row,center,center,wrap);
+    position:relative;
+
+    &__chard{
+        width: 10rem;
+        height:15rem;
+        // position: absolute;
+        // left:20%;
+        // transform: translate(200px);
+        // transform: translateX(10%) translateY(-20%) rotate(355deg);
+        transform: translate(10%,-60%) rotate(300deg);
+        
+    }
+
+    &__glassOrange{
+        width: 10rem;
+        height: 10rem;
+
+        transform: translate(-40%, -80%);
+    }
+
+}

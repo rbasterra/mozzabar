@@ -1,0 +1,87 @@
+:root{
+    --header-color:white;
+    --font-family: Arial;
+}
+
+.header{
+    height: 25%;
+    width: 100%;
+    background-color:#333;
+    color: var(--header-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    font-family: var(--font-family);
+}
+
+.h-logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.madrid{
+    display: flex;
+    flex-flow: row nowrap;
+    display: inline-block;
+    width:100%;
+    background-color: salmon;
+
+}
+
+.img-logo{
+    width: auto;
+    height: 10rem;
+}
+
+.before-plogo{
+    display: inline-block;
+    width: 40%;
+    height: 2px;
+    background-color: orange;
+}
+
+.p-logo{
+    font-style: italic;
+}
+
+
+
+
+/**.p-logo::before{
+    content:"";
+    width: 40%;
+    height: 2px;
+    background-color: orange;
+    display: inline;
+}**/
+
+.menu ul{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--header-color);
+    display: flex;
+    flex-flow: row wrap;
+}
+    
+
+nav a{
+    color: var(--header-color);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.b-underscore::after{
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: orange;
+    display: block;
+}
+
+.bloque-central{
+    width: 100%;
+    height: 4rem;
+    background-color: turquoise;
+}

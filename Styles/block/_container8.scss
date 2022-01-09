@@ -1,0 +1,23 @@
+.container8{
+    
+    padding:2%;
+    padding-bottom:5%;
+
+    &__items{
+        @include flexContainer(row,space-around,center,wrap);
+        width:50%;
+    }
+
+    &__box{
+        padding: 10px 20px;
+        border: 1px solid black ;
+        
+    }
+
+    & a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $text-color-dark;
+        font-size: 13px;
+    }
+}

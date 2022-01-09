@@ -1,0 +1,59 @@
+footer{
+    
+    background-color: $footer-color;
+    padding:5% 0 0 0;
+
+    
+
+    & ul{
+        list-style-type: none;
+        text-decoration: none;
+        color:$text-color-dark;
+        @include flexContainer(row, space-around, flex-start, wrap);
+        padding:0;
+    }
+
+}
+
+.footer{
+
+    &__divMain{
+        @include flexContainer(column, space-around, flex-start, wrap);
+    }
+
+    &__list{
+        width:100%;
+    }
+
+    &__list-item{
+        @include flexContainer(column,space-around,flex-start,wrap);
+    }
+
+    &__title{
+        text-transform: uppercase;
+        padding-bottom:5%;
+    }
+
+    &__telephone{
+        margin-top:20%;
+    }
+
+    &__icons{
+        @include flexContainer(row,space-between, center, wrap);
+        width:100%;
+
+        &--size{
+            width:15px;
+            
+        }
+
+        &--margin{
+            margin:5% 2% 1% 0;
+        }
+    }
+
+    &__derechos{
+        margin:5% 0 1% 5%;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,115 @@
+.reservas{
+    @include flexContainer(column, center, center, wrap);
+
+    &__title{
+        width:40%;
+        margin:5%;
+        text-transform: uppercase;
+        color: $text-color;
+
+        @include flexContainer (row,flex-start,center,nowrap);
+
+        &::before{
+            @include lineDivider ($mozzaSecondary-color, margin-right);
+        }
+
+        &::after{
+            @include lineDivider ($mozzaSecondary-color, margin-left);
+        }
+    }
+
+    &-main{
+        margin:0 0 20% 5%;
+        width:100%;
+        @include flexContainer (row, center, flex-start, wrap);
+
+        &__form{
+            width:45%;
+            margin-right: 5%;
+        }
+
+        &__section{
+            width:25%;
+
+            &-item{
+                text-transform: uppercase;
+                font-size: 2rem;
+
+                &--colorOrange{
+                    color:$mozzaSecondary-color;
+                }
+
+                &--colorWhite{
+                    color:$text-color;
+                }
+            }
+
+            &-text{
+
+                margin-top: 5%;
+
+                &--color{
+                    color:$reservas-textColor;
+                }
+            }
+        }
+
+        &__foodDrinks{
+
+            @include flexContainer (column,flex-start,flex-start,nowrap);
+
+            &::after{
+                @include lineDivider($reservas-textColor, margin-right);
+                width:23%;
+                margin: 2% 0;
+            }
+        }
+        
+    }
+
+    &-form{
+        
+        &__personasHora{
+            @include flexContainer (row, center, center, wrap);
+            margin-bottom: 2%;
+        }
+    
+        &__item{
+            @include flexContainer(column, center, flex-start, wrap);
+
+            &--halfWidth{
+                width: 45%;
+            }
+
+            &--color{
+                color:$text-color;
+            }
+
+            &--margin-right{
+                margin-right:10%;
+            }
+        }
+
+        &__select-box{
+            width: 100%;
+            height:2rem;
+           
+        }
+
+        &__button{
+            width:100%;
+            height:2rem;
+            background-color: $button-background;
+            border:none;    
+
+            &--margin{
+                margin:5% 0;
+            }
+
+            &--margin-bottom{
+                margin-bottom:2%;
+            }
+        }
+    }
+}
+

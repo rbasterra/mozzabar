@@ -1,0 +1,75 @@
+.carta{
+
+    // height:100%;
+    margin-top: 2rem;
+
+    @include flexContainer (column, center, center, wrap);
+
+    &__titleMenu{
+        @include flexContainer (column,center,center,nowrap);
+        width:100%;
+        // height:4rem;
+
+    }
+    
+    &__cartaSeparator{
+
+        width:50%;
+        padding: 1.5rem;
+        margin: 1.5rem;
+
+        @include flexContainer (row,flex-start,center,nowrap);
+
+        &::before{
+            @include lineDivider ($header-background-color, margin-right);
+        }
+
+        &::after{
+            @include lineDivider ($header-background-color, margin-left);
+        }
+    }
+
+    &__menu{
+
+        ul{
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+            padding: 0;
+            @include flexContainer (row, space-around, center, wrap);
+            
+        }
+
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+        &--underscore {
+
+            &::after{
+                content: "";
+                width: 85%;
+                height: 2px;
+                background-color: $mozzaSecondary-color;
+                display: block;
+            }
+        
+        }
+    
+    } 
+
+    &__verCarta{
+        margin: 2rem;
+        padding: 10px 20px;
+        background-color: $mozzaSecondary-color;
+        
+
+        & a{
+            text-transform: uppercase;
+            text-decoration: none;
+            color:$text-color;
+            font-size: 13px;
+        }
+    }
+}
